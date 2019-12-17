@@ -1,27 +1,28 @@
 import csv, sys
 
-def main(line, table_name):
-  for i in range(len(line)):
+def convert_row(row):
+  for i in range(len(row)):
     try:
-      int(line[i])
+      int(row[i])
     except:
-      line[i] = '\"' + line[i] + '\"'
+      row[i] = '\"' + row[i] + '\"'
 
-  statement = """INSERT INTO {}\nVALUES ({});\n""".format(table_name, ', '.join(line))
-  return statement
+  return '({})'.format(','.join(row))
+
 
 def write_file(table_name):
+  initial_stmt = 'INSERT INTO {} VALUES\n'.format(table_name)
   lines = []
-  with open('{}.csv'.format(table_name)) as csv_file:
-      csv_reader = csv.reader(csv_file, delimiter=',')
-      line_count = 0
-      for row in csv_reader:
-          lines.append(main(row, table_name))
-          line_count += 1
-      print(f'Processed {line_count} lines.')
+  with open('data/{}.csv'.format(table_name), encoding='utf-8-sig') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=',')
+    for row in csv_reader:
+      lines.append(convert_row(row))
+    print('Processed {} lines.'.format(len(lines)))
 
-  with open('data/{}.sql'.format(table_name), 'w') as f:
-    f.write('\n'.join(lines))
+  sql_stmt = initial_stmt + ',\n'.join(lines) + ';'
 
-table = sys.argv[1]
-write_file(table)
+  with open('src/{}.sql'.format(table_name), 'w') as f:
+    f.write(sql_stmt)
+
+
+write_file(sys.argv[1])
