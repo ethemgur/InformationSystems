@@ -71,7 +71,7 @@ CREATE TABLE Project (
   InstructorID INTEGER NOT NULL,
   PRIMARY KEY (ProjectID),
   FOREIGN KEY (CourseID) REFERENCES Course(CourseID),
-  FOREIGN KEY (ContactID) REFERENCES Company(ContactID),
+  FOREIGN KEY (ContactID) REFERENCES CompanyContact(ContactID),
   FOREIGN KEY (InstructorID) REFERENCES Instructor(InstructorID)
 );
 
