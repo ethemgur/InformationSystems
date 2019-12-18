@@ -10,6 +10,24 @@ ON CompanyContact (Email);
 CREATE INDEX idx_ContactPhone
 ON CompanyContact (Phone);
 
+
+INSERT INTO Instructor VALUES
+(10001,"Metin","Turkay","mturkay@ku.edu.tr"),
+(10002,"Baris","Yildiz","byildiz@ku.edu.tr"),
+(10003,"Sibel","Salman","ssalman@ku.edu.tr"),
+(10004,"Pelin","Canpolat","pcanpolat@ku.edu.tr"),
+(10005,"Banu","Yobas","byobas@ku.edu.tr"),
+(10006,"Murat","Tekalp","mtekalp@ku.edu.tr"),
+(10007,"Ozgur","Akan","oakan@ku.edu.tr"),
+(10008,"Hakan","Urey","hurey@ku.edu.tr"),
+(10009,"Onur","Ergen","oergen@ku.edu.tr"),
+(10010,"Alper","Demir","ademir@ku.edu.tr"),
+(10011,"Deniz","Yuret","dyuret@ku.edu.tr"),
+(10012,"Baris","Akgun","bakgun@ku.edu.tr"),
+(10013,"Oznur","Ozkasap","oozkasap@ku.edu.tr"),
+(10014,"Yucel","Yemez","yyemez@ku.edu.tr"),
+(10015,"Engin","Erzin","eerzin@ku.edu.tr");
+
 INSERT INTO Student VALUES
 (59001,"Yerdan","Yılmaz","yyılmaz15@ku.edu.tr","INDR","ECON"),
 (59002,"Ahmet","Çınar","açınar15@ku.edu.tr","INDR",""),
@@ -117,22 +135,111 @@ INSERT INTO Student VALUES
 (59104,"İrem","Köprü","iköprü15@ku.edu.tr","COMP",""),
 (59105,"Sezgi","Balseven","sezgibalseven15@ku.edu.tr","COMP","");
 
-INSERT INTO Instructor VALUES
-(10001,"Metin","Turkay","mturkay@ku.edu.tr"),
-(10002,"Baris","Yildiz","byildiz@ku.edu.tr"),
-(10003,"Sibel","Salman","ssalman@ku.edu.tr"),
-(10004,"Pelin","Canpolat","pcanpolat@ku.edu.tr"),
-(10005,"Banu","Yobas","byobas@ku.edu.tr"),
-(10006,"Murat","Tekalp","mtekalp@ku.edu.tr"),
-(10007,"Ozgur","Akan","oakan@ku.edu.tr"),
-(10008,"Hakan","Urey","hurey@ku.edu.tr"),
-(10009,"Onur","Ergen","oergen@ku.edu.tr"),
-(10010,"Alper","Demir","ademir@ku.edu.tr"),
-(10011,"Deniz","Yuret","dyuret@ku.edu.tr"),
-(10012,"Baris","Akgun","bakgun@ku.edu.tr"),
-(10013,"Oznur","Ozkasap","oozkasap@ku.edu.tr"),
-(10014,"Yucel","Yemez","yyemez@ku.edu.tr"),
-(10015,"Engin","Erzin","eerzin@ku.edu.tr");
+INSERT INTO CompanyContact VALUES
+(301,"Arcelik","Fatma Ozlem Acar","Production","Project Leader","fatmaozlemacar@arcelik.com",5351001010),
+(302,"Ford","Ozde Acarkan","R&D","Manager","ozdeacarkan@ford.com",5351001011),
+(303,"Vestel","Mehmet Can Akar","Strategy","Director","mehmetcanakar@vestel.com",5351001012),
+(304,"Coca Cola","Ozer Seckin","IT","Specialist","ozerseckin@cocacola.com",5351001013),
+(305,"Sanofi","Selman Erkosan","Production","Supervisor","selmanerkosan@sanofi.com",5351001014),
+(306,"Renault","Nadire Erbul","R&D","Project Leader","nadireerbul@renault.com",5351001015),
+(307,"Is Bankasi","Abdullah Mert Erol","Product Development","Manager","abdullahmerterol@isbankasi.com",5351001016),
+(308,"HP","Yelda Kardas","IT","Director","yeldakardas@hp.com",5351001017),
+(309,"LC Waikiki","Esma Ece Kavak","Production","Specialist","esmaecekavak@lcwaikiki.com",5351001018),
+(310,"Casper","Ali Kucukler","R&D","Supervisor","alikucukler@casper.com",5351001019),
+(311,"General Mobile","Aysel Oz","Supply Chain","Project Leader","ayseloz@generalmobile.com",5351001020),
+(312,"Tofas","Safak Pakdil","IT","Manager","safakpakdil@tofas.com",5351001021),
+(313,"Turkcell","Ozge Elif Sarier","Production","Director","ozgeelifsarier@turkcell.com",5351001022),
+(314,"Samsung","Esengul Sariteke","R&D","Specialist","esengulsariteke@samsung.com",5351001023),
+(315,"Huawei","Melis Sever","Logistics","Supervisor","melissever@huawei.com",5351001024);
+
+INSERT INTO Course VALUES
+(90001,"Fall17","INDR","ENG"),
+(90002,"Fall17","COMP","ENG"),
+(90003,"Fall17","ELEC","ENG"),
+(90004,"Spr18","INDR","ENG"),
+(90005,"Spr18","COMP","ENG"),
+(90006,"Spr18","ELEC","ENG"),
+(90007,"Fall18","INDR","ENG"),
+(90008,"Fall18","COMP","ENG"),
+(90009,"Fall18","ELEC","ENG"),
+(90010,"Spr19","INDR","ENG"),
+(90011,"Spr19","COMP","ENG"),
+(90012,"Spr19","ELEC","ENG"),
+(90013,"Fall19","INDR","ENG"),
+(90014,"Fall19","COMP","ENG"),
+(90015,"Fall19","ELEC","ENG");
+
+INSERT INTO Assignment VALUES
+(7001,"Proposal","1.10.2018",10,90008),
+(7002,"Progress Report","1.11.2018",25,90008),
+(7003,"Presentation","30.11.2018",25,90008),
+(7004,"Final Report","20.12.2018",40,90008),
+(7005,"Proposal","1.10.2019",10,90013),
+(7006,"Progress Report","1.11.2019",25,90013),
+(7007,"Presentation","30.11.2019",25,90013),
+(7008,"Final Report","20.12.2019",40,90013),
+(7009,"Proposal","1.10.2019",10,90014),
+(7010,"Progress Report","1.11.2019",25,90014),
+(7011,"Presentation","30.11.2019",25,90014),
+(7012,"Final Report","20.12.2019",40,90014),
+(7013,"Proposal","1.10.2019",10,90015),
+(7014,"Progress Report","1.11.2019",25,90015),
+(7015,"Presentation","30.11.2019",25,90015),
+(7016,"Final Report","20.12.2019",40,90015);
+
+INSERT INTO Project VALUES
+(1,"AI","The project aims to create an artificial intelligence model that can detect inconsistencies in debates.",1,10011,90008,301),
+(2,"Android","The project aims to develop an android mobile application that allows patients to get tailored treatments and individualised care at home, helping them to better manage their health and make the most of their final years of life.",1,10013,90014,304),
+(3,"Machine Learning","The project aims to develop a machine learning model that can identify and track speed, lean, and fuel savings, among other factors, in cars without additional human intervention",1,10012,90014,308),
+(4,"Circuit Design","The project aims to design circuits which are made by reassembling simple components together. This will enable devices like smartphones, MP3 players, cameras and digital watches to access information more easily and also provide new ways to keep track of information in the field.",1,10006,90015,302),
+(5,"Robotics","The project aims to build a robotic tool which will assist farmers to remove weeds and bushes from the land.",1,10009,90015,306),
+(6,"Big Data","The project aims to manage big data on the backend. This means that we'll be building a API and publishing the API documentation to help developers build application.",1,10001,90013,301),
+(7,"Supply Chain","The project aims to develop supply chain model to solve air quality issue in the city.",1,10003,90013,303),
+(8,"Facility Design","The project aims to design service facility and products for removal of 10-15 years old radioactive waste from a part of the mountain where heavy metals and other dangerous materials are stored for later disposal",1,10005,90013,307),
+(9,"Database System","The project aims to create a database system that holds a person's identity and sends the messages to the endpoints by which they are created, to facilitate information retrieval and to overcome one of the greatest shortcomings of the internet",0,10015,90014,313),
+(10,"Signal","The project aims to proceed electromagnetic signal process from ground-based to air-based and to introduce into the process high power narrow band amplifier, receiver and converter",1,10010,90015,314),
+(11,"Simulation of Process","The Project aims to develop a Simulation of Process model",1,10004,90013,315),
+(12,"Service Operations","The Project aims to develop a Service Operations model",1,10001,90013,309),
+(13,"Network Optimization","The Project aims to develop a Network Optimization model",1,10002,90013,311),
+(14,"Image Recognition","The Project aims to develop a Image Recognition model",1,10007,90015,306),
+(15,"Micro Processor","The Project aims to develop a Micro Processor model",1,10011,90014,312),
+(16,"Financial Engineering","The Project aims to develop a Financial Engineering model",1,10005,90013,305),
+(17,"Software Enginneering","The Project aims to develop a Software Enginneering model",1,10015,90014,313),
+(18,"Embedding Systems","The Project aims to develop a Embedding Systems model",1,10009,90015,310),
+(19,"Digital Communication","The Project aims to develop a Digital Communication model",1,10008,90015,314),
+(20,"IOS","The Project aims to develop a IOS model",1,10014,90014,308),
+(21,"Network Optimization","The Project aims to develop a Network Optimization model",1,10001,90013,315),
+(22,"Supply Chain","The project aims to solve new supply chain model problems by embracing the better part of the engineering maturity of the smart end products and industrial control systems",1,10002,90013,309),
+(23,"Financial Engineering","The Project aims to develop a Financial Engineering application",1,10003,90013,311),
+(24,"Service Operations","The Project aims to develop a Service Operations application",1,10004,90013,305),
+(25,"Facility Design","The project aims to design high tech production facility capable of producing technologies that can be manufactured at high efficiency, remove harmful materials and waste and further advance the use of plastics by creating a multi-purpose, low maintenance plastic model to replace used plastic bottles",1,10005,90013,301),
+(26,"Information Systems","The project aims to design database system for automatic information retrieval for the government. The system will store government documents according to the information regarding the documentation",1,10001,90013,303),
+(27,"Decision Analysis","The Project aims to conduct a financial Decision Analysis",1,10002,90013,307),
+(28,"Machine Learning","The Project aims to develop a Machine Learning model",1,10003,90013,315),
+(29,"Simulation of Processes","The Project aims to develop a Simulation of Processes model",1,10004,90013,309),
+(30,"Production Planning","The Project aims to develop a Production Planning model",1,10005,90013,311),
+(31,"Machine Learning","The project aims to develop a machine learning model that will assist in the development of techniques for adaptive recruiting systems, the ability to accurately detect and deliver target messages to a targeted user based on how the user appears in VR.",1,10001,90013,305),
+(32,"Information Systems","The Project aims to develop a Information Systems",1,10002,90013,301),
+(33,"Simulation of Process","The Project aims to develop a Simulation of Processes model",1,10003,90013,303),
+(34,"VR technology","The Project aims to develop a VR technology model",1,10011,90014,312),
+(35,"Cloud Systems","The Project aims to develop a Cloud Systems model",1,10012,90008,308),
+(36,"Web App Development","The Project aims to develop a Web App Development model",1,10013,90014,313),
+(37,"Cloud Systems","The Project aims to develop a Cloud Systems",1,10011,90014,301),
+(38,"Block Chains","The Project aims to develop a Block Chains model",1,10015,90014,304),
+(39,"Deep Learning","The project aims to develop a deep learning model to identify more highly perceived people in future social network predictions. For example, its analysts could predict that trendsetters.",1,10014,90014,312),
+(40,"Chatbot","The Project aims to develop a Chatbot prototype",1,10012,90014,308),
+(41,"AR application","The Project aims to develop an AR application prototype",1,10013,90014,313),
+(42,"AI","The project aims to create an artificial intelligence model of natural language processing that targets the processing of machine translation and speech recognition tasks such as sentiment detection, the understanding of language, automatic domain learning, and object classification.",1,10014,90014,301),
+(43,"IOS","The Project aims to develop a IOS application",1,10015,90014,304),
+(44,"Signal","The Project aims to develop a Signal processing tool",1,10006,90015,302),
+(45,"Circuit Design","The project aims to design circuits for the electronic circuit inside a human cell, just like a circuit in an electronic device, allowing us to record and process biological information.",1,10007,90015,306),
+(46,"Robotics","The project aims to build a robotic arm that will work with a hand to help infants and children learn to hold a water-filled cup or jug",1,10008,90015,314),
+(47,"Optics","The Project aims to develop an Optics application",1,10009,90015,310),
+(48,"Fotonic Sensor","The Project aims to develop a Fotonic Sensor",1,10010,90015,302),
+(49,"Computer Vision","The Project aims to develop a Computer Vision application",1,10008,90015,306),
+(50,"Image Recognition","The Project aims to develop a Image Recognition model",1,10010,90015,314),
+(51,"Video Processing","The Project aims to develop a Video Processing application",1,10007,90015,310);
+
 
 INSERT INTO Groups VALUES
 (1,"","",13),
@@ -299,112 +406,6 @@ INSERT INTO GroupParticipant VALUES
 (50,59105),
 (50,59096);
 
-INSERT INTO Course VALUES
-(90001,"Fall17","INDR","ENG"),
-(90002,"Fall17","COMP","ENG"),
-(90003,"Fall17","ELEC","ENG"),
-(90004,"Spr18","INDR","ENG"),
-(90005,"Spr18","COMP","ENG"),
-(90006,"Spr18","ELEC","ENG"),
-(90007,"Fall18","INDR","ENG"),
-(90008,"Fall18","COMP","ENG"),
-(90009,"Fall18","ELEC","ENG"),
-(90010,"Spr19","INDR","ENG"),
-(90011,"Spr19","COMP","ENG"),
-(90012,"Spr19","ELEC","ENG"),
-(90013,"Fall19","INDR","ENG"),
-(90014,"Fall19","COMP","ENG"),
-(90015,"Fall19","ELEC","ENG");
-
-INSERT INTO CompanyContact VALUES
-(301,"Arcelik","Fatma Ozlem Acar","Production","Project Leader","fatmaozlemacar@arcelik.com",5351001010),
-(302,"Ford","Ozde Acarkan","R&D","Manager","ozdeacarkan@ford.com",5351001011),
-(303,"Vestel","Mehmet Can Akar","Strategy","Director","mehmetcanakar@vestel.com",5351001012),
-(304,"Coca Cola","Ozer Seckin","IT","Specialist","ozerseckin@cocacola.com",5351001013),
-(305,"Sanofi","Selman Erkosan","Production","Supervisor","selmanerkosan@sanofi.com",5351001014),
-(306,"Renault","Nadire Erbul","R&D","Project Leader","nadireerbul@renault.com",5351001015),
-(307,"Is Bankasi","Abdullah Mert Erol","Product Development","Manager","abdullahmerterol@isbankasi.com",5351001016),
-(308,"HP","Yelda Kardas","IT","Director","yeldakardas@hp.com",5351001017),
-(309,"LC Waikiki","Esma Ece Kavak","Production","Specialist","esmaecekavak@lcwaikiki.com",5351001018),
-(310,"Casper","Ali Kucukler","R&D","Supervisor","alikucukler@casper.com",5351001019),
-(311,"General Mobile","Aysel Oz","Supply Chain","Project Leader","ayseloz@generalmobile.com",5351001020),
-(312,"Tofas","Safak Pakdil","IT","Manager","safakpakdil@tofas.com",5351001021),
-(313,"Turkcell","Ozge Elif Sarier","Production","Director","ozgeelifsarier@turkcell.com",5351001022),
-(314,"Samsung","Esengul Sariteke","R&D","Specialist","esengulsariteke@samsung.com",5351001023),
-(315,"Huawei","Melis Sever","Logistics","Supervisor","melissever@huawei.com",5351001024);
-
-INSERT INTO Project VALUES
-(1,"AI","The project aims to create an artificial intelligence model that can detect inconsistencies in debates.",1,10011,90008,301),
-(2,"Android","The project aims to develop an android mobile application that allows patients to get tailored treatments and individualised care at home, helping them to better manage their health and make the most of their final years of life.",1,10013,90014,304),
-(3,"Machine Learning","The project aims to develop a machine learning model that can identify and track speed, lean, and fuel savings, among other factors, in cars without additional human intervention",1,10012,90014,308),
-(4,"Circuit Design","The project aims to design circuits which are made by reassembling simple components together. This will enable devices like smartphones, MP3 players, cameras and digital watches to access information more easily and also provide new ways to keep track of information in the field.",1,10006,90015,302),
-(5,"Robotics","The project aims to build a robotic tool which will assist farmers to remove weeds and bushes from the land.",1,10009,90015,306),
-(6,"Big Data","The project aims to manage big data on the backend. This means that we'll be building a API and publishing the API documentation to help developers build application.",1,10001,90013,301),
-(7,"Supply Chain","The project aims to develop supply chain model to solve air quality issue in the city.",1,10003,90013,303),
-(8,"Facility Design","The project aims to design service facility and products for removal of 10-15 years old radioactive waste from a part of the mountain where heavy metals and other dangerous materials are stored for later disposal",1,10005,90013,307),
-(9,"Database System","The project aims to create a database system that holds a person's identity and sends the messages to the endpoints by which they are created, to facilitate information retrieval and to overcome one of the greatest shortcomings of the internet",0,10015,90014,313),
-(10,"Signal","The project aims to proceed electromagnetic signal process from ground-based to air-based and to introduce into the process high power narrow band amplifier, receiver and converter",1,10010,90015,314),
-(11,"Simulation of Process","The Project aims to develop a Simulation of Process model",1,10004,90013,315),
-(12,"Service Operations","The Project aims to develop a Service Operations model",1,10001,90013,309),
-(13,"Network Optimization","The Project aims to develop a Network Optimization model",1,10002,90013,311),
-(14,"Image Recognition","The Project aims to develop a Image Recognition model",1,10007,90015,306),
-(15,"Micro Processor","The Project aims to develop a Micro Processor model",1,10011,90014,312),
-(16,"Financial Engineering","The Project aims to develop a Financial Engineering model",1,10005,90013,305),
-(17,"Software Enginneering","The Project aims to develop a Software Enginneering model",1,10015,90014,313),
-(18,"Embedding Systems","The Project aims to develop a Embedding Systems model",1,10009,90015,310),
-(19,"Digital Communication","The Project aims to develop a Digital Communication model",1,10008,90015,314),
-(20,"IOS","The Project aims to develop a IOS model",1,10014,90014,308),
-(21,"Network Optimization","The Project aims to develop a Network Optimization model",1,10001,90013,315),
-(22,"Supply Chain","The project aims to solve new supply chain model problems by embracing the better part of the engineering maturity of the smart end products and industrial control systems",1,10002,90013,309),
-(23,"Financial Engineering","The Project aims to develop a Financial Engineering application",1,10003,90013,311),
-(24,"Service Operations","The Project aims to develop a Service Operations application",1,10004,90013,305),
-(25,"Facility Design","The project aims to design high tech production facility capable of producing technologies that can be manufactured at high efficiency, remove harmful materials and waste and further advance the use of plastics by creating a multi-purpose, low maintenance plastic model to replace used plastic bottles",1,10005,90013,301),
-(26,"Information Systems","The project aims to design database system for automatic information retrieval for the government. The system will store government documents according to the information regarding the documentation",1,10001,90013,303),
-(27,"Decision Analysis","The Project aims to conduct a financial Decision Analysis",1,10002,90013,307),
-(28,"Machine Learning","The Project aims to develop a Machine Learning model",1,10003,90013,315),
-(29,"Simulation of Processes","The Project aims to develop a Simulation of Processes model",1,10004,90013,309),
-(30,"Production Planning","The Project aims to develop a Production Planning model",1,10005,90013,311),
-(31,"Machine Learning","The project aims to develop a machine learning model that will assist in the development of techniques for adaptive recruiting systems, the ability to accurately detect and deliver target messages to a targeted user based on how the user appears in VR.",1,10001,90013,305),
-(32,"Information Systems","The Project aims to develop a Information Systems",1,10002,90013,301),
-(33,"Simulation of Process","The Project aims to develop a Simulation of Processes model",1,10003,90013,303),
-(34,"VR technology","The Project aims to develop a VR technology model",1,10011,90014,312),
-(35,"Cloud Systems","The Project aims to develop a Cloud Systems model",1,10012,90008,308),
-(36,"Web App Development","The Project aims to develop a Web App Development model",1,10013,90014,313),
-(37,"Cloud Systems","The Project aims to develop a Cloud Systems",1,10011,90014,301),
-(38,"Block Chains","The Project aims to develop a Block Chains model",1,10015,90014,304),
-(39,"Deep Learning","The project aims to develop a deep learning model to identify more highly perceived people in future social network predictions. For example, its analysts could predict that trendsetters.",1,10014,90014,312),
-(40,"Chatbot","The Project aims to develop a Chatbot prototype",1,10012,90014,308),
-(41,"AR application","The Project aims to develop an AR application prototype",1,10013,90014,313),
-(42,"AI","The project aims to create an artificial intelligence model of natural language processing that targets the processing of machine translation and speech recognition tasks such as sentiment detection, the understanding of language, automatic domain learning, and object classification.",1,10014,90014,301),
-(43,"IOS","The Project aims to develop a IOS application",1,10015,90014,304),
-(44,"Signal","The Project aims to develop a Signal processing tool",1,10006,90015,302),
-(45,"Circuit Design","The project aims to design circuits for the electronic circuit inside a human cell, just like a circuit in an electronic device, allowing us to record and process biological information.",1,10007,90015,306),
-(46,"Robotics","The project aims to build a robotic arm that will work with a hand to help infants and children learn to hold a water-filled cup or jug",1,10008,90015,314),
-(47,"Optics","The Project aims to develop an Optics application",1,10009,90015,310),
-(48,"Fotonic Sensor","The Project aims to develop a Fotonic Sensor",1,10010,90015,302),
-(49,"Computer Vision","The Project aims to develop a Computer Vision application",1,10008,90015,306),
-(50,"Image Recognition","The Project aims to develop a Image Recognition model",1,10010,90015,314),
-(51,"Video Processing","The Project aims to develop a Video Processing application",1,10007,90015,310);
-
-
-INSERT INTO Assignment VALUES
-(7001,"Proposal","1.10.2018",10,90008),
-(7002,"Progress Report","1.11.2018",25,90008),
-(7003,"Presentation","30.11.2018",25,90008),
-(7004,"Final Report","20.12.2018",40,90008),
-(7005,"Proposal","1.10.2019",10,90013),
-(7006,"Progress Report","1.11.2019",25,90013),
-(7007,"Presentation","30.11.2019",25,90013),
-(7008,"Final Report","20.12.2019",40,90013),
-(7009,"Proposal","1.10.2019",10,90014),
-(7010,"Progress Report","1.11.2019",25,90014),
-(7011,"Presentation","30.11.2019",25,90014),
-(7012,"Final Report","20.12.2019",40,90014),
-(7013,"Proposal","1.10.2019",10,90015),
-(7014,"Progress Report","1.11.2019",25,90015),
-(7015,"Presentation","30.11.2019",25,90015),
-(7016,"Final Report","20.12.2019",40,90015);
-
 INSERT INTO Submission VALUES
 (8001,"30.9.2018",80,0,6,7001),
 (8002,"31.10.2018",80,0,6,7002),
@@ -423,15 +424,3 @@ INSERT INTO Submission VALUES
 (8017,"29.9.2019",80,0,36,7013),
 (8018,"27.10.2019",95,0,36,7014),
 (8019,"1.12.2019",70,1,36,7015);
-
-UPDATE Assignment
-SET DeadlineDate = "2.10.2018"
-WHERE AssignmentID = 7001;
-
-DELETE FROM Project
-WHERE Status = 0;
-
-SELECT Project.Subject
-FROM Project
-GROUP BY Project.Subject
-HAVING Project.InstructorID = 10001;
