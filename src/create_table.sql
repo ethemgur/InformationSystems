@@ -55,7 +55,7 @@ CREATE TABLE Assignment (
   AssignmentID Int(4) NOT NULL,
   AssignmentName Varchar(20) NOT NULL,
   DeadlineDate Date NOT NULL,
-  Percentage Int(2) NOT NULL,
+  Percentage Int(2) NOT NULL CHECK(Percentage >= 0 AND Percentage <= 100),
   CourseID INTEGER NOT NULL,
   PRIMARY KEY (AssignmentID),
   FOREIGN KEY (CourseID) REFERENCES Course(CourseID)
@@ -78,7 +78,7 @@ CREATE TABLE Project (
 CREATE TABLE Submission (
   SubmissionID Int(4) NOT NULL,
   SubmissionDate Date NOT NULL,
-  Grade Int(3),
+  Grade Int(3) CHECK(Grade >= 0 AND Grade <= 100),
   Lateness Boolean,
   GroupID INTEGER NOT NULL,
   AssignmentID INTEGER NOT NULL,
