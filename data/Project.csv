@@ -1,7 +1,7 @@
 ﻿1,"AI","The project aims to create an artificial intelligence model that can detect inconsistencies in debates.",1,10011,90008,301
 2,"Android","The project aims to develop an android mobile application that allows patients to get tailored treatments and individualised care at home, helping them to better manage their health and make the most of their final years of life.",1,10013,90014,304
 3,"Machine Learning","The project aims to develop a machine learning model that can identify and track speed, lean, and fuel savings, among other factors, in cars without additional human intervention",1,10012,90014,308
-4,"Circuit Design","The project aims to design circuits which are made by ""reassembling"" simple components together. This will enable devices like smartphones, MP3 players, cameras and digital watches to access information more easily and also provide new ways to keep track of information in the field.",1,10006,90015,302
+4,"Circuit Design","The project aims to design circuits which are made by reassembling simple components together. This will enable devices like smartphones, MP3 players, cameras and digital watches to access information more easily and also provide new ways to keep track of information in the field.",1,10006,90015,302
 5,"Robotics","The project aims to build a robotic tool which will assist farmers to remove weeds and bushes from the land.",1,10009,90015,306
 6,"Big Data","The project aims to manage big data on the backend. This means that we'll be building a API and publishing the API documentation to help developers build application.",1,10001,90013,301
 7,"Supply Chain","The project aims to develop supply chain model to solve air quality issue in the city.",1,10003,90013,303
@@ -39,7 +39,7 @@
 39,"Deep Learning","The project aims to develop a deep learning model to identify more highly perceived people in future social network predictions. For example, its analysts could predict that trendsetters.",1,10014,90014,312
 40,"Chatbot","The Project aims to develop a Chatbot prototype",1,10012,90014,308
 41,"AR application","The Project aims to develop an AR application prototype",1,10013,90014,313
-42,"AI","The project aims to create an artificial intelligence model of natural language processing that targets the processing of machine translation and speech recognition tasks such as sentiment detection, the understanding of language, automatic ""domain"" learning, and object classification.",1,10014,90014,301
+42,"AI","The project aims to create an artificial intelligence model of natural language processing that targets the processing of machine translation and speech recognition tasks such as sentiment detection, the understanding of language, automatic domain learning, and object classification.",1,10014,90014,301
 43,"IOS","The Project aims to develop a IOS application",1,10015,90014,304
 44,"Signal","The Project aims to develop a Signal processing tool",1,10006,90015,302
 45,"Circuit Design","The project aims to design circuits for the electronic circuit inside a human cell, just like a circuit in an electronic device, allowing us to record and process biological information.",1,10007,90015,306

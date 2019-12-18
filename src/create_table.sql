@@ -63,8 +63,8 @@ CREATE TABLE Assignment (
 
 CREATE TABLE Project (
   ProjectID Int(7) NOT NULL,
-  Subject Varchar(20) NOT NULL,
-  Description Varchar(200) NOT NULL,
+  Subject Varchar(50) NOT NULL,
+  Description Varchar(500) NOT NULL,
   Status Boolean NOT NULL,
   CourseID INTEGER NOT NULL,
   ContactID INTEGER,
