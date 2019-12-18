@@ -79,7 +79,7 @@ CREATE TABLE Submission (
   SubmissionID Int(4) NOT NULL,
   SubmissionDate Date NOT NULL,
   Grade Int(3) CHECK(Grade >= 0 AND Grade <= 100),
-  Lateness Boolean,
+  Lateness Boolean NOT NULL,
   GroupID INTEGER NOT NULL,
   AssignmentID INTEGER NOT NULL,
   PRIMARY KEY (SubmissionID),
