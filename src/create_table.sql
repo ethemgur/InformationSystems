@@ -28,9 +28,9 @@ CREATE TABLE CompanyContact (
   CompanyName Varchar(30) NOT NULL,
   ContactName Varchar(40) NOT NULL,
   Department Varchar(20) NOT NULL,
-  Title Varchar(20),
+  Title Varchar(20) NOT NULL,
   Email Varchar(30) NOT NULL UNIQUE,
-  Phone Number Int(10) UNIQUE,
+  Phone Number Int(10) NOT NULL UNIQUE,
   PRIMARY KEY (ContactID)
 );
 
