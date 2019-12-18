@@ -424,3 +424,15 @@ INSERT INTO Submission VALUES
 (8017,"29.9.2019",80,0,36,7013),
 (8018,"27.10.2019",95,0,36,7014),
 (8019,"1.12.2019",70,1,36,7015);
+
+UPDATE Assignment
+SET DeadlineDate = "2.10.2018"
+WHERE AssignmentID = 7001;
+
+DELETE FROM Project
+WHERE Status = 0;
+
+SELECT Project.Subject
+FROM Project
+GROUP BY Project.Subject
+HAVING Project.InstructorID = 10001;
